@@ -4,8 +4,16 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .container{
-    max-width: 1140px;
+   /* max-width: 1140px;*/
+    width: 90%;
     margin: auto;
+}
+.venom{
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 728px;
+    width: 50%;
 }
 .header{
     display: flex;
@@ -34,15 +42,18 @@ body{
     display: block;
     font-size: 24px;
     line-height: 28px;
-    margin-bottom: 38px;
+    margin-bottom: 2%;
     color:rgb(255, 255, 255,0.8);
 }
 .film-description {
-    margin-top: 45px;
+    margin-top: 3%;
     max-width: 423px;
     font-size: 16px;
     line-height: 140%;
     color: rgba(255,255,255,0.8);
+}
+.film-logo{
+    width: 70%;
 }
 .button{
     padding: 15px 30px;
@@ -68,15 +79,11 @@ body{
     color:#fff;
 }
 .button-group{
-    margin-top: 70px;
+    margin-top: 5%;
 }
-.venom{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+
 .blood{
-    background: url("../img/image 3.png")no-repeat top right, #14131a url('../img/image\ 2.jpg')no-repeat center center/110%;
+    background: url("../img/image 3.png")no-repeat top right/70%, #14131a url('../img/image\ 2.jpg')no-repeat center center/110%;
 }
 .primary-bg{
     background: #14131a url('../img/image\ 2.jpg')no-repeat center center/110%;
@@ -160,4 +167,31 @@ body{
 .poster-wrapper .list{
     margin: 0;
     margin-bottom: 20px;
+}
+.menu-button{
+    display: none;
+}
+@media (max-width:768px){
+    .blood{
+        background:#14131a;
+    }
+}
+
+.venom{
+    top: 10%;
+}
+@media (max-width:576px){
+    .nav-menu{
+        display: none;
+    }
+    .menu-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border:none;
+        background-color:#14131a;
+        cursor: pointer;
+        color: #fff;
+    }
 }
